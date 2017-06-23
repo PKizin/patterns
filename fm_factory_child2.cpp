@@ -3,6 +3,6 @@
 using namespace factory_method;
 
 Base* FactoryChildTwo::create() {
-	return new ChildTwo();
+    return new ChildTwo();
 }
 

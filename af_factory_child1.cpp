@@ -5,14 +5,14 @@
 using namespace abstract_factory;
 
 BaseOne* FactoryChildOne::createBaseOne() {
-	return new ChildOneBaseOne();
+    return new ChildOneBaseOne();
 }
 
 BaseTwo* FactoryChildOne::createBaseTwo() {
-	return new ChildOneBaseTwo();
+    return new ChildOneBaseTwo();
 }
 
 BaseThree* FactoryChildOne::createBaseThree() {
-	return new ChildOneBaseThree();
+    return new ChildOneBaseThree();
 }
 

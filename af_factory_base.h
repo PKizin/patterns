@@ -7,14 +7,14 @@
 
 namespace abstract_factory {
 
-	class FactoryBase {
-	public:
-		virtual ~FactoryBase();
-		virtual BaseOne* createBaseOne() = 0;
-		virtual BaseTwo* createBaseTwo() = 0;
-		virtual BaseThree* createBaseThree() = 0;
-	};
-	
+    class FactoryBase {
+    public:
+        virtual ~FactoryBase();
+        virtual BaseOne* createBaseOne() = 0;
+        virtual BaseTwo* createBaseTwo() = 0;
+        virtual BaseThree* createBaseThree() = 0;
+    };
+    
 }
 
 #endif

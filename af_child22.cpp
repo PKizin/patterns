@@ -3,6 +3,6 @@
 using namespace abstract_factory;
 
 void ChildTwoBaseTwo::info() {
-	std::cout << "child #2 of base #2 (abstract factory)\n";
+    std::cout << "child #2 of base #2 (abstract factory)\n";
 }
 

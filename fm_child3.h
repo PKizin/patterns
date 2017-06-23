@@ -4,12 +4,12 @@
 #include "fm_base.h"
 
 namespace factory_method {
-	
-	class ChildThree : public Base {
-	public:
-		void info() override;
-	};
-	
+    
+    class ChildThree : public Base {
+    public:
+        void info() override;
+    };
+    
 }
 
 #endif

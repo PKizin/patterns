@@ -3,6 +3,6 @@
 using namespace factory_method;
 
 void ChildTwo::info() {
-	std::cout << "child #2 (factory method)\n";
+    std::cout << "child #2 (factory method)\n";
 }
 

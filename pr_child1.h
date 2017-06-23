@@ -4,13 +4,13 @@
 #include "pr_base.h"
 
 namespace prototype {
-	
-	class ChildOne : public Base {
-	public:
-		Base* clone() override;
-		void info() override;
-	};
-	
+    
+    class ChildOne : public Base {
+    public:
+        Base* clone() override;
+        void info() override;
+    };
+    
 }
 
 #endif

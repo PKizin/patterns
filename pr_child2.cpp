@@ -3,10 +3,10 @@
 using namespace prototype;
 
 Base* ChildTwo::clone() {
-	return new ChildTwo(*this);
+    return new ChildTwo(*this);
 }
 
 void ChildTwo::info() {
-	std::cout << "child #2 (prototype)\n";
+    std::cout << "child #2 (prototype)\n";
 }
 

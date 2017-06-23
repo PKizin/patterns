@@ -5,15 +5,15 @@
 
 namespace singleton {
 
-	class Base {
-	public:
-		static Base* instance();
-		void info();
-	private:
-		Base() {}
-		Base(const Base&);
-		Base& operator=(const Base&);
-	};
+    class Base {
+    public:
+        static Base* instance();
+        void info();
+    private:
+        Base() {}
+        Base(const Base&);
+        Base& operator=(const Base&);
+    };
 
 }
 

@@ -4,13 +4,13 @@
 #include "fm_base.h"
 
 namespace factory_method {
-	
-	class FactoryBase {
-	public:
-		virtual ~FactoryBase();
-		virtual Base* create() = 0;
-	};
-	
+    
+    class FactoryBase {
+    public:
+        virtual ~FactoryBase();
+        virtual Base* create() = 0;
+    };
+    
 }
 
 #endif

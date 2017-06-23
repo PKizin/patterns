@@ -2,13 +2,13 @@
 #define AF_BASE2_H
 
 namespace abstract_factory {
-	
-	class BaseTwo {
-	public:
-		virtual ~BaseTwo();
-		virtual void info() = 0;
-	};
-	
+    
+    class BaseTwo {
+    public:
+        virtual ~BaseTwo();
+        virtual void info() = 0;
+    };
+    
 }
 
 #endif

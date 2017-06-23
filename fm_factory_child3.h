@@ -5,12 +5,12 @@
 #include "fm_base.h"
 
 namespace factory_method {
-	
-	class FactoryChildThree : public FactoryBase {
-	public:
-		Base* create() override;
-	};
-	
+    
+    class FactoryChildThree : public FactoryBase {
+    public:
+        Base* create() override;
+    };
+    
 }
 
 #endif

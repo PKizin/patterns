@@ -7,19 +7,19 @@
 #include "af_base3.h"
 
 namespace abstract_factory {
-	
-	class Collection {
-	public:
-		~Collection();
-		void create(FactoryBase* factory);
-		void clear();
-		void info();
-	private:
-		BaseOne* b1 = nullptr;
-		BaseTwo* b2 = nullptr;
-		BaseThree* b3 = nullptr;
-	};
-	
+    
+    class Collection {
+    public:
+        ~Collection();
+        void create(FactoryBase* factory);
+        void clear();
+        void info();
+    private:
+        BaseOne* b1 = nullptr;
+        BaseTwo* b2 = nullptr;
+        BaseThree* b3 = nullptr;
+    };
+    
 }
 
 #endif

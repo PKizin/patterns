@@ -4,12 +4,12 @@
 #include "af_base2.h"
 
 namespace abstract_factory {
-	
-	class ChildTwoBaseTwo : public BaseTwo {
-	public:
-		void info() override;
-	};
-	
+    
+    class ChildTwoBaseTwo : public BaseTwo {
+    public:
+        void info() override;
+    };
+    
 }
 
 #endif

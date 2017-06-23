@@ -17,53 +17,53 @@
 #include "af_factory_child2.h"
 
 int main() {
-	{
-		using namespace singleton;
-		Base* s = Base::instance();
-		s->info();
-	}
-	
-	{
-		using namespace prototype;
-		Pool::insert(new ChildOne, "prototype_1");
-		Pool::insert(new ChildTwo, "prototype_2");
-		Pool::insert(new ChildThree, "prototype_3");
-		Base* p;
-		p = Pool::clone("prototype_1");
-		p->info();
-		p = Pool::clone("prototype_2");
-		p->info();
-		p = Pool::clone("prototype_3");
-		p->info();
-	}
-	
-	{
-		using namespace factory_method;
-		FactoryBase* f;
-		Base* p;
-		f = new FactoryChildOne;
-		p = f->create();
-		p->info();
-		f = new FactoryChildTwo;
-		p = f->create();
-		p->info();
-		f = new FactoryChildThree;
-		p = f->create();
-	 	p->info();
-	}
-	
-	{
-		using namespace abstract_factory;
-		FactoryBase* f;
-		Collection* c = new Collection;
-		f = new FactoryChildOne;
-		c->create(f);
-		c->info();
-		f = new FactoryChildTwo;
-		c->create(f);
-		c->info();
-	}
-	
-	return 0;
+    {
+        using namespace singleton;
+        Base* s = Base::instance();
+        s->info();
+    }
+    
+    {
+        using namespace prototype;
+        Pool::insert(new ChildOne, "prototype_1");
+        Pool::insert(new ChildTwo, "prototype_2");
+        Pool::insert(new ChildThree, "prototype_3");
+        Base* p;
+        p = Pool::clone("prototype_1");
+        p->info();
+        p = Pool::clone("prototype_2");
+        p->info();
+        p = Pool::clone("prototype_3");
+        p->info();
+    }
+    
+    {
+        using namespace factory_method;
+        FactoryBase* f;
+        Base* p;
+        f = new FactoryChildOne;
+        p = f->create();
+        p->info();
+        f = new FactoryChildTwo;
+        p = f->create();
+        p->info();
+        f = new FactoryChildThree;
+        p = f->create();
+         p->info();
+    }
+    
+    {
+        using namespace abstract_factory;
+        FactoryBase* f;
+        Collection* c = new Collection;
+        f = new FactoryChildOne;
+        c->create(f);
+        c->info();
+        f = new FactoryChildTwo;
+        c->create(f);
+        c->info();
+    }
+    
+    return 0;
 }
 
