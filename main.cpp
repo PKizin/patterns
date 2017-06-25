@@ -16,6 +16,10 @@
 #include "af_factory_child1.h"
 #include "af_factory_child2.h"
 
+#include "br_child1.h"
+#include "br_child2.h"
+#include "br_child3.h"
+
 int main() {
     {
         using namespace singleton;
@@ -49,7 +53,7 @@ int main() {
         p->info();
         f = new FactoryChildThree;
         p = f->create();
-         p->info();
+        p->info();
     }
     
     {
@@ -63,6 +67,23 @@ int main() {
         c->create(f);
         c->info();
     }
+    
+    {
+    	using namespace bridge;
+    	Base* p;
+    	p = new ChildOne("impl_1");
+    	p->info();
+    	p = new ChildTwo("impl_1");
+    	p->info();
+    	p = new ChildThree("impl_1");
+    	p->info();
+    	p = new ChildOne("impl_2");
+    	p->info();
+    	p = new ChildTwo("impl_2");
+    	p->info();
+    	p = new ChildThree("impl_2");
+    	p->info();
+	}
     
     return 0;
 }

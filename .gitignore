@@ -4,4 +4,10 @@
 *.layout
 *.out
 *.o
+abstract_factory.h
+abstract_factory.cpp
+factory_method.h
+factory_method.cpp
+prototype.h
+prototype.cpp
 lib/
