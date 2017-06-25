@@ -3,20 +3,20 @@
 using namespace bridge;
 
 Base::Base() : 
-	impl(nullptr) 
+    impl(nullptr) 
 {
 }
 
 Base::Base(BaseImpl* imp) : 
-	impl(imp) 
+    impl(imp) 
 {
 }
 
 Base::~Base() {
-	if (impl) {
-		delete impl;
-		impl = nullptr;
-	}
+    if (impl) {
+        delete impl;
+        impl = nullptr;
+    }
 }
 
 

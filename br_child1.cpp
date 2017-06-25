@@ -4,17 +4,17 @@
 using namespace bridge;
 
 ChildOne::ChildOne(std::string type) {
-	if (type == "impl_1") {
-		impl = new ChildImplOne();
-	}
-	if (type == "impl_2") {
-		impl = new ChildImplTwo();
-	}
+    if (type == "impl_1") {
+        impl = new ChildImplOne();
+    }
+    if (type == "impl_2") {
+        impl = new ChildImplTwo();
+    }
 }
 
 void ChildOne::info() {
-	if (impl) {
-		impl->info1();
-	}
+    if (impl) {
+        impl->info1();
+    }
 }
 

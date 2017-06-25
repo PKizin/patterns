@@ -5,13 +5,13 @@
 #include <string>
 
 namespace bridge {
-	
-	class ChildTwo : public Base {
-	public:
-		ChildTwo(std::string type);
-		void info() override;
-	};
-	
+    
+    class ChildTwo : public Base {
+    public:
+        ChildTwo(std::string type);
+        void info() override;
+    };
+    
 }
 
 #endif

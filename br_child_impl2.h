@@ -4,14 +4,14 @@
 #include "br_base_impl.h"
 
 namespace bridge {
-	
-	class ChildImplTwo : public BaseImpl {
-	public:
-		void info1() override;
-		void info2() override;
-		void info3() override;
-	}; 
-	
+    
+    class ChildImplTwo : public BaseImpl {
+    public:
+        void info1() override;
+        void info2() override;
+        void info3() override;
+    }; 
+    
 }
 
 #endif
