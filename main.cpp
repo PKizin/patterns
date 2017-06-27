@@ -20,6 +20,12 @@
 #include "br_child2.h"
 #include "br_child3.h"
 
+#include "de_child1.h"
+#include "de_child2.h"
+#include "de_child3.h"
+#include "de_decorator_child1.h"
+#include "de_decorator_child2.h"
+
 int main() {
     {
         using namespace singleton;
@@ -83,6 +89,29 @@ int main() {
         p->info();
         p = new ChildThree("impl_2");
         p->info();
+    }
+    
+    {
+        using namespace decorator;
+        Base* p;
+        p = new ChildOne;
+        p->info();
+        p = new ChildTwo;
+        p->info();
+        p = new ChildThree;
+        p->info();
+        p = new DecoratorChildOne(new ChildOne);
+        p->info();
+        p = new DecoratorChildOne(new ChildTwo);
+        p->info();
+        p = new DecoratorChildOne(new ChildThree);
+        p->info();
+        p = new DecoratorChildTwo(new DecoratorChildOne(new ChildOne));
+        p->info();
+        p = new DecoratorChildTwo(new DecoratorChildOne(new ChildTwo));
+        p->info();
+        p = new DecoratorChildTwo(new DecoratorChildOne(new ChildThree));
+        p->info();        
     }
     
     return 0;

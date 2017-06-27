@@ -11,6 +11,6 @@ void ChildImplTwo::info2() {
 }
 
 void ChildImplTwo::info3() {
-    std::cout << "method #3 of implementation #2 (bridge)\n";
+    std::cout << "method #3 of implementation #2 (bridge)\n\n";
 }
 
