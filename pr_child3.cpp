@@ -7,6 +7,6 @@ Base* ChildThree::clone() {
 }
 
 void ChildThree::info() {
-    std::cout << "child #3 (prototype)\n\n";
+    std::cout << "child #3 (prototype)\n";
 }
 

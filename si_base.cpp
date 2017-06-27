@@ -8,6 +8,6 @@ Base* Base::instance() {
 }
 
 void Base::info() {
-    std::cout << "base (singleton)\n\n";
+    std::cout << "base (singleton)\n";
 }
 
